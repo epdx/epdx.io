@@ -1,0 +1,27 @@
+
+
+.calendar_button{
+  background-color: black;
+  color: white;
+  width: 12vw;
+  font-size: 16px;
+  padding: 8px;
+  border: none;
+}
+
+#collapse_month{
+  display: inline;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+button:focus {
+  background-color: lime;
+  color: black;
+}
+
+#day_words > button{
+  border-bottom: solid lime !important;
+}
