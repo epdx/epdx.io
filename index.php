@@ -12,6 +12,7 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/mystyles.css" rel="stylesheet"/>
 
+        <?php echo "hello world";  ?>
     </head>
     <body class = "bg-black">
         <!-- Responsive navbar-->
