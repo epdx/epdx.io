@@ -4,6 +4,12 @@ $( document ).ready(function() {
     var src = "";
     var index = 0;
     var days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+    const month_names = ["january", "february", "march", "april", "may", "june",
+      "july", "august", "september", "october", "november", "december"
+    ];
+
+    // name the current month_names    // add src to collapse month
+    $("#collapse_month_name").html(month_names[new Date().getMonth()]);
 
     // create list of days for this month
     var calendar_days = [];
