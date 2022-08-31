@@ -1,18 +1,16 @@
-$( document ).ready(function() {
+import { NetlifyAPI } from 'netlify'
 
-const myHeaders = new Headers();
+const client = new NetlifyAPI('1234myAccessToken')
+const sites = await client.listSites()
 
-const myRequest = new Request('GET /api/v1/sites/f98d50f5-6ad4-4119-a051-374f8094c048/submissions', {
-  method: 'GET',
-  headers: myHeaders,
-  mode: 'cors',
-  cache: 'default',
-});
 
-fetch(myRequest)
-  .then((response) => response.blob())
-  .then((myBlob) => {
-    myImage.src = URL.createObjectURL(myBlob);
-  });
-
+const opts = {
+  userAgent: 'netlify/js-client',
+  scheme: 'https',
+  host: 'api.netlify.com',
+  pathPrefix: '/api/v1',
+  accessToken: '1234myAccessToken',
+  agent: undefined, // e.g. HttpsProxyAgent
+  globalParams: {}, // parameters you want available for every request.
+  // Global params are only sent of the OpenAPI spec specifies the provided params.
 }
