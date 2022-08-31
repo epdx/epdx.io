@@ -37,7 +37,7 @@
     <h2 class="container-fluid d-flex justify-content-center font-weight-light text-light">
       add your event to the calendar...
     </h2>
-    <form class="needs-validation border px-5 mb-3" novalidate>
+    <form action="action.php" class="needs-validation border px-5 mb-3" novalidate>
       <label class="custom-date-label text-light mt-3" for="validatedCustomDate">date</label>
       <div class="col-md-4 mb-3 text-light border" id="input_fields">
         <input type="date" class="form-control-date p3" id="choose_date">
@@ -56,7 +56,7 @@
       </div>
       <div class="col-md-3 mb-3">
         <label for="ticket_link" class="text-light">event description</label>
-        <input type="text" class="form-control border rounded-0" id="ticket_link" placeholder="describe your event" required>
+        <input name = "ticket_link" type="text" class="form-control border rounded-0" id="ticket_link" placeholder="describe your event" required>
       </div>
       <div class="col-md-3 mb-3">
         <button class="submit_button" type="submit">Submit</button>

@@ -9,7 +9,7 @@ $( document ).ready(function() {
     ];
 
     // name the current month_names    // add src to collapse month
-    $("#collapse_month_name").html(month_names[new Date().getMonth()]);
+    $("#month_name").html(month_names[new Date().getMonth()]);
 
     // create list of days for this month
     var calendar_days = [];
