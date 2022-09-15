@@ -130,7 +130,7 @@
       try {
         // Fetch first 10 files
         response = await gapi.client.sheets.spreadsheets.values.get({
-          spreadsheetId: '1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms',
+          spreadsheetId: '1SOTCxma52SZEqidaU0qy2GnhC3H6S6MpyQ2zWTEWifM',
           range: 'Class Data!A2:A5',
         });
       } catch (err) {
@@ -146,7 +146,6 @@
     }
 
   </script>
-  <script src="config.js"></script>
   <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
   <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
 </body>
