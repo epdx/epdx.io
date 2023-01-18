@@ -149,7 +149,7 @@ function create_events(events, calendar_days){
             '<div class="card h-100 bg-dark">' + 
             '<div class="card-body">' + 
             '<h2 class="card-title text-light">NO EVENTS</h2>' + 
-            '</div><div class="card-footer">' 
+            '</div><div class="card-footer">' +
             `<a class="btn btn-primary btn-sm" href="https://forms.gle/uxbyqubfJPUzKvQr9">submit your event here</a>` +
             '</div></div></div>';
         }
